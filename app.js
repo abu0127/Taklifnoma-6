@@ -12,12 +12,19 @@ container.addEventListener("scroll", function () {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        // Faqatgina container ichida ko‘rinadigan birinchi sectionga active nav beramiz
+
+
         if (
             !found &&
             sectionTop <= containerTop + containerHeight / 2 &&
             sectionTop + sectionHeight > containerTop + containerHeight / 2
         ) {
+
+            if (index == 0) section.classList.add('active');
+            if (index == 1) section.classList.add('active');
+             
+
+
             navs.forEach(nav => nav.classList.remove('active'));
             if (navs[index]) {
                 navs[index].classList.add('active');

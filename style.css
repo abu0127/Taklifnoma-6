@@ -29,27 +29,28 @@ section{
 }
 .navigator{
     position: fixed;
-    height: 100vh;
+    height: 100lvh;
     width: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 25px;
 }
 .navigator .nav{
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: rgba(84, 84, 84, 0.729);
-    margin-top: 25px;
+    
     transition: all .7s;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .nav a{
-    color: #f6f6f6;
-    font-size: 6px;
+    color: #b1b1b1;
+    font-size: 7px;
 }
 .nav.active{
     background-color: aliceblue;
@@ -57,6 +58,7 @@ section{
     height: 13px;
     transition: all .4s;
 }
+
 .active{
     background-color: rgb(40, 155, 255);
    

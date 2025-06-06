@@ -9,6 +9,7 @@ html, body{
     overflow: hidden;
 }
 .container{
+    scroll-behavior: smooth;
     position: relative;
     max-width: 550px;
     height: 100lvh;
@@ -36,17 +37,25 @@ section{
     align-items: center;
 }
 .navigator .nav{
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: rgba(84, 84, 84, 0.729);
     margin-top: 25px;
-    transition: all .4s;
+    transition: all .7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav a{
+    color: #f6f6f6;
+    font-size: 6px;
 }
 .nav.active{
     background-color: aliceblue;
-    width: 17px;
-    height: 17px;
+    width: 13px;
+    height: 13px;
+    transition: all .4s;
 }
 .active{
     background-color: rgb(40, 155, 255);
